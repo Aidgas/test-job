@@ -80,11 +80,21 @@ for (let j = 0; i < 256; i++, j++) {
 
 for (let t1 = 1; t1 < 10; t1++) {
     for (let t2 = 1; t2 < 10; t2++) {
-        matrixASCII_2.push(['' + t1 + ',' + t2, String.fromCharCode(i) + String.fromCharCode(i), i]);
+        matrixASCII_2.push(['' + t1 + ',' + t2 + ',', String.fromCharCode(i) + String.fromCharCode(i), i]);
         i++;
     }
 }
 
+for (let p = 97; p < 105; p++) {
+    for (let t2 = 1; t2 < 10; t2++) {
+        matrixASCII_2.push(['' + String.fromCharCode(p) + ',' + t2 + ',', String.fromCharCode(i) + String.fromCharCode(i), i]);
+        i++;
+    }
+    
+    if (i > 255) {
+        break;
+    }
+}
 
 //------------------------------------------------------------------------------
 function serializeList(list) {

@@ -1,32 +1,32 @@
 случайные - 50:
-OK length original 179 serialize len: 99 compress: 44.6927374301676
+OK length original 180 serialize len: 99 compress: 45
 
 случайные - 100:
-OK length original 369 serialize len: 199 compress: 46.070460704607044
+OK length original 365 serialize len: 199 compress: 45.47945205479452
 
 случайные - 500:
-OK length original 1829 serialize len: 998 compress: 45.434663750683434
+OK length original 1827 serialize len: 996 compress: 45.48440065681445
 
 случайные - 1000:
-OK length original 3643 serialize len: 1999 compress: 45.12764205325281
+OK length original 3632 serialize len: 1997 compress: 45.01651982378855
 
 Все числа 1 знака:
-OK length original 99 serialize len: 77 compress: 22.22222222222223
-OK length original 199 serialize len: 154 compress: 22.613065326633162
-OK length original 999 serialize len: 784 compress: 21.52152152152152
-OK length original 1999 serialize len: 1560 compress: 21.96098049024512
+OK length original 99 serialize len: 59 compress: 40.4040404040404
+OK length original 199 serialize len: 111 compress: 44.221105527638194
+OK length original 999 serialize len: 573 compress: 42.64264264264264
+OK length original 1999 serialize len: 1129 compress: 43.52176088044022
 
 Все числа из 2-х знаков:
 OK length original 149 serialize len: 99 compress: 33.557046979865774
 OK length original 299 serialize len: 199 compress: 33.4448160535117
-OK length original 1503 serialize len: 999 compress: 33.532934131736525
-OK length original 3007 serialize len: 1999 compress: 33.52178250748254
+OK length original 1499 serialize len: 999 compress: 33.355570380253496
+OK length original 2999 serialize len: 1999 compress: 33.344448149383126
 
 Все числа из 3-х знаков:
 OK length original 199 serialize len: 99 compress: 50.25125628140704
 OK length original 399 serialize len: 199 compress: 50.12531328320802
-OK length original 1999 serialize len: 999 compress: 50.02501250625313
+OK length original 1999 serialize len: 1000 compress: 49.97498749374687
 OK length original 3999 serialize len: 1999 compress: 50.01250312578144
 
 Каждого числа по 3 - всего чисел 900:
-OK length original 9749 serialize len: 5372 compress: 44.89691250384655
+OK length original 9920 serialize len: 5365 compress: 45.917338709677416
