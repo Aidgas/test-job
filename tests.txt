@@ -1,0 +1,22 @@
+OK length original 185 serialize len: 99 compress: 46.486486486486484
+OK length original 367 serialize len: 199 compress: 45.776566757493185
+OK length original 1831 serialize len: 999 compress: 45.4396504642272
+OK length original 3643 serialize len: 1999 compress: 45.12764205325281
+
+Все числа 1 знака:
+OK length original 99 serialize len: 99 compress: 0
+OK length original 199 serialize len: 199 compress: 0
+OK length original 999 serialize len: 999 compress: 0
+OK length original 1999 serialize len: 1999 compress: 0
+
+Все числа из 2-х знаков:
+OK length original 149 serialize len: 99 compress: 33.557046979865774
+OK length original 300 serialize len: 199 compress: 33.66666666666667
+OK length original 1505 serialize len: 999 compress: 33.62126245847176
+OK length original 3009 serialize len: 1999 compress: 33.565968760385516
+
+Все числа из 3-х знаков:
+OK length original 199 serialize len: 99 compress: 50.25125628140704
+OK length original 399 serialize len: 200 compress: 49.87468671679198
+OK length original 1999 serialize len: 1000 compress: 49.97498749374687
+OK length original 3999 serialize len: 2000 compress: 49.98749687421856
