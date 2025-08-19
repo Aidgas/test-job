@@ -67,7 +67,8 @@ for (let i = 0; i < 256 && f <= 300; i++) {
 
 matrixASCII.reverse();
 
-for (let i = 59, j = 0; i < 256; i++, j++) {
+let i = 59;
+for (let j = 0; i < 256; i++, j++) {
     if (matrixASCII[j][1].length < 2) {
         break;
     }
@@ -76,6 +77,14 @@ for (let i = 59, j = 0; i < 256; i++, j++) {
     
     matrixASCII_2.push([matrixASCII[j][1] + ',', add, i]);
 }
+
+for (let t1 = 1; t1 < 10; t1++) {
+    for (let t2 = 1; t2 < 10; t2++) {
+        matrixASCII_2.push(['' + t1 + ',' + t2, String.fromCharCode(i) + String.fromCharCode(i), i]);
+        i++;
+    }
+}
+
 
 //------------------------------------------------------------------------------
 function serializeList(list) {
@@ -230,3 +239,5 @@ for (let i = 0; i < 900; i++) {
 }
 
 test(1000, 100, 300, false, myList);
+
+// command run server: node --use_strict index.js
