@@ -11,11 +11,9 @@ let matrixASCII_2 = [];
 let f = 10;
 for (let i = 0; i < 256; i++) {
     
-    if (    /*i == 92
-        ||*/  i == 36                 // $
+    if (    i == 36                 // $
         ||  i == 44                 // ,
-        ||  (i >= 48 && i <= 57)    // 0 .. 9 
-        //||  (i > 126 && i < 161)
+        ||  (i >= 48 && i <= 57)    // 0 .. 9
     ) {
         continue;
     }
@@ -41,11 +39,9 @@ for (let i = 0; i < 256; i++) {
 
 for (let i = 0; i < 256 && f <= 300; i++) {
     
-    if (   // i == 92                  
-           i == 36                 // $
+    if (   i == 36                 // $
         || i == 44                 // ,
         ||  (i >= 48 && i <= 57)    // 0 .. 9
-        //||  (i > 126 && i < 161)
     ) {
         continue;
     }
@@ -137,9 +133,9 @@ function deSerializeList(stringList) {
     return result;
 }
 
-console.log(matrixASCII.length);
+/*console.log(matrixASCII.length);
 console.log(util.inspect(matrixASCII, { maxArrayLength: null, depth:null }));
-console.log(util.inspect(matrixASCII_2, { maxArrayLength: null, depth:null }));
+console.log(util.inspect(matrixASCII_2, { maxArrayLength: null, depth:null }));*/
 
 // INIT NUMBERS
 
@@ -151,8 +147,6 @@ function test(count, min = 1, max = 300, debug = false) {
     for (let i = 0; i < COUNT_NUMBERS; i++) {
         list.push( getRandomIntNumber(min, max + 1) );
     }
-
-    //console.log(list);
 
     let r1 = serializeList(list);
     let r2 = deSerializeList(r1);
