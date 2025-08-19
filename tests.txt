@@ -1,7 +1,14 @@
-OK length original 185 serialize len: 99 compress: 46.486486486486484
-OK length original 367 serialize len: 199 compress: 45.776566757493185
-OK length original 1831 serialize len: 999 compress: 45.4396504642272
-OK length original 3643 serialize len: 1999 compress: 45.12764205325281
+случайные - 50:
+OK length original 172 serialize len: 99 compress: 42.44186046511628
+
+случайные - 100:
+OK length original 366 serialize len: 200 compress: 45.3551912568306
+
+случайные - 500:
+OK length original 1821 serialize len: 999 compress: 45.14003294892916
+
+случайные - 1000:
+OK length original 3634 serialize len: 1999 compress: 44.99174463401211
 
 Все числа 1 знака:
 OK length original 99 serialize len: 99 compress: 0
@@ -10,13 +17,16 @@ OK length original 999 serialize len: 999 compress: 0
 OK length original 1999 serialize len: 1999 compress: 0
 
 Все числа из 2-х знаков:
-OK length original 149 serialize len: 99 compress: 33.557046979865774
-OK length original 300 serialize len: 199 compress: 33.66666666666667
-OK length original 1505 serialize len: 999 compress: 33.62126245847176
-OK length original 3009 serialize len: 1999 compress: 33.565968760385516
+OK length original 150 serialize len: 99 compress: 34
+OK length original 301 serialize len: 199 compress: 33.88704318936877
+OK length original 1509 serialize len: 999 compress: 33.7972166998012
+OK length original 3008 serialize len: 1999 compress: 33.5438829787234
 
 Все числа из 3-х знаков:
-OK length original 199 serialize len: 99 compress: 50.25125628140704
-OK length original 399 serialize len: 200 compress: 49.87468671679198
-OK length original 1999 serialize len: 1000 compress: 49.97498749374687
-OK length original 3999 serialize len: 2000 compress: 49.98749687421856
+OK length original 199 serialize len: 100 compress: 49.74874371859296
+OK length original 399 serialize len: 199 compress: 50.12531328320802
+OK length original 1999 serialize len: 999 compress: 50.02501250625313
+OK length original 3999 serialize len: 1999 compress: 50.01250312578144
+
+Каждого числа по 3 - всего чисел 900:
+OK length original 9752 serialize len: 5399 compress: 44.63699753896637

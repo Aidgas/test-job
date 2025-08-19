@@ -137,17 +137,20 @@ function deSerializeList(stringList) {
 console.log(util.inspect(matrixASCII, { maxArrayLength: null, depth:null }));
 console.log(util.inspect(matrixASCII_2, { maxArrayLength: null, depth:null }));*/
 
-// INIT NUMBERS
-
-function test(count, min = 1, max = 300, debug = false) {
+function test(count, min = 1, max = 300, debug = false, setList = null) {
 
     let COUNT_NUMBERS = count;
     let list = [];
 
-    for (let i = 0; i < COUNT_NUMBERS; i++) {
-        list.push( getRandomIntNumber(min, max + 1) );
+    if (setList) {
+        list = setList;
     }
-
+    else {
+        for (let i = 0; i < COUNT_NUMBERS; i++) {
+            list.push( getRandomIntNumber(min, max + 1) );
+        }
+    }
+    
     let r1 = serializeList(list);
     let r2 = deSerializeList(r1);
 
@@ -185,10 +188,18 @@ function test(count, min = 1, max = 300, debug = false) {
     }
 }
 
+console.log("\nслучайные - 50:");
 test(50);
+
+console.log("\nслучайные - 100:");
 test(100);
+
+console.log("\nслучайные - 500:");
 test(500);
+
+console.log("\nслучайные - 1000:");
 test(1000);
+
 
 console.log("\nВсе числа 1 знака:");
 test(50, 1, 9);
@@ -207,3 +218,15 @@ test(50, 100, 300);
 test(100, 100, 300);
 test(500, 100, 300);
 test(1000, 100, 300);
+
+console.log("\nКаждого числа по 3 - всего чисел 900:");
+let myList = [];
+
+for (let i = 0; i < 900; i++) {
+    let addValue = getRandomIntNumber(1, 300 + 1)
+    myList.push(addValue);
+    myList.push(addValue);
+    myList.push(addValue);
+}
+
+test(1000, 100, 300, false, myList);
