@@ -111,8 +111,6 @@ function serializeList(list) {
         result = result.replaceAll(matrixASCII_2[j][0], matrixASCII_2[j][1]);
     }
     
-    //console.log(list.join(','));
-    //console.log(result);
     return result;
 }
 
@@ -217,10 +215,10 @@ test(500, 1, 9);
 test(1000, 1, 9);
 
 console.log("\nВсе числа из 2-х знаков:");
-test(50, 10, 100);
-test(100, 10, 100);
-test(500, 10, 100);
-test(1000, 10, 100);
+test(50, 10, 99);
+test(100, 10, 99);
+test(500, 10, 99);
+test(1000, 10, 99);
 
 console.log("\nВсе числа из 3-х знаков:");
 test(50, 100, 300);
